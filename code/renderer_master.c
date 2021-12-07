@@ -1,0 +1,46 @@
+#ifndef RENDERER_MASTER_H
+#define RENDERER_MASTER_H
+
+#define ColorMax 1.f
+//#define ColorMax 255.f
+
+#define ColorRed v4(ColorMax, 0.f, 0.f, ColorMax)
+#define ColorBlue v4(0.f, 0.f, ColorMax, ColorMax)
+#define ColorGreen v4(0.f, ColorMax, 0.f, ColorMax)
+#define ColorWhite v4(ColorMax, ColorMax, ColorMax, ColorMax)
+#define ColorGray v4((ColorMax / 2.f, ColorMax / 2.f, ColorMax / 2.f)
+#define ColorBlack v4(0.f, 0.f, 0.f, ColorMax)
+#define ColorBrown v4((0.647059f*ColorMax,0.164706f*ColorMax,0.164706f*ColorMax, ColorMax)
+#define ColorCyan v4(0.f, ColorMax, ColorMax, ColorMax)
+#define ColorMagenta v4(ColorMax, 0.f, ColorMax, ColorMax)
+#define ColorPurple v4(0.501961f * ColorMax, 0.f * ColorMax, 0.501961f * ColorMax, ColorMax)
+#define ColorOrange v4(1.f * ColorMax, 0.647059f * ColorMax, 0.f * ColorMax, ColorMax)
+#define ColorPink v4(1.f * ColorMax, 0.752941f * ColorMax, 0.796078f * ColorMax, ColorMax)
+#define ColorHotPink v4(1.f * ColorMax, 0.411765f * ColorMax, 0.705882f * ColorMax, ColorMax)
+#define ColorFullPink v4(ColorMax, 0.f, ColorMax, ColorMax)
+#define ColorYellow v4(ColorMax, ColorMax, 0.f, ColorMax)
+#define ColorCornflowerBlue v4(0.392157f * ColorMax, 0.584314f * ColorMax, 0.929412f * ColorMax, ColorMax)
+#define ColorTeal v4(0.f, 0.501961f * ColorMax, 0.501961f * ColorMax, ColorMax)
+#define ColorMaroon v4(0.501961f * ColorMax, 0.f * ColorMax, 0.f * ColorMax, ColorMax)
+#define ColorTurquoise v4(0.25098f * ColorMax, 0.878431f * ColorMax, 0.815686f * ColorMax, ColorMax)
+#define ColorAzure v4(0.941176f * ColorMax, 1.f * ColorMax, 1.f * ColorMax, ColorMax)
+#define ColorGold v4(1.f * ColorMax, 0.843137f * ColorMax, 0.f * ColorMax, ColorMax)
+#define ColorNavy v4(0.f * ColorMax, 0.f * ColorMax, 0.501961f * ColorMax, ColorMax)
+#define ColorOlive v4(0.501961f * ColorMax, 0.501961f * ColorMax, 0.f * ColorMax, ColorMax)
+#define ColorSilver v4(0.752941f * ColorMax, 0.752941f * ColorMax, 0.752941f * ColorMax, ColorMax)
+#define ColorC64red v4(104.f / 255.f * ColorMax, 55.f / 255.f * ColorMax, 43.f / 255.f * ColorMax, ColorMax)
+#define ColorC64cyan v4(112.f / 255.f * ColorMax, 164.f / 255.f * ColorMax, 178.f / 255.f * ColorMax, ColorMax)
+#define ColorC64purple v4(111.f / 255.f * ColorMax, 61.f / 255.f * ColorMax, 134.f / 255.f * ColorMax, ColorMax)
+#define ColorC64green v4(88.f / 255.f * ColorMax, 141.f / 255.f * ColorMax, 67.f / 255.f * ColorMax, ColorMax)
+#define ColorC64blue v4(53.f / 255.f * ColorMax, 40.f / 255.f * ColorMax, 121.f / 255.f * ColorMax, ColorMax)
+#define ColorC64yellow v4(184.f / 255.f * ColorMax, 199.f / 255.f * ColorMax, 111.f / 255.f * ColorMax, ColorMax)
+#define ColorC64orange v4(111.f / 255.f * ColorMax, 79.f / 255.f * ColorMax, 37.f / 255.f * ColorMax, ColorMax)
+#define ColorC64brown v4(67.f / 255.f * ColorMax, 57.f / 255.f * ColorMax, 0.f, ColorMax)
+#define ColorC64lightred v4(154.f / 255.f * ColorMax, 103.f / 255.f * ColorMax, 89.f / 255.f * ColorMax, ColorMax)
+#define ColorC64darkgrey v4(68.f / 255.f * ColorMax, 68.f / 255.f * ColorMax, 68.f / 255.f * ColorMax, ColorMax)
+#define ColorC64grey v4(108.f / 255.f * ColorMax, 108.f / 255.f * ColorMax, 108.f / 255.f * ColorMax, ColorMax)
+#define ColorC64lightgreen v4(154.f / 255.f * ColorMax, 210.f / 255.f * ColorMax, 132.f / 255.f * ColorMax, ColorMax)
+#define ColorC64lightblue v4(108.f / 255.f * ColorMax, 94.f / 255.f * ColorMax, 181.f / 255.f * ColorMax, ColorMax)
+#define ColorC64lightgrey v4(149.f / 255.f * ColorMax, 149.f / 255.f * ColorMax, 149.f / 255.f * ColorMax, ColorMax)
+
+#endif

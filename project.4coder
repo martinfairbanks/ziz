@@ -1,0 +1,85 @@
+version(1);
+project_name = "ZiZ";
+
+patterns = { "*.c", "*.h", "*.cpp", "*.bat"
+};
+
+blacklist_patterns =
+{
+	".*",
+};
+
+load_paths_custom = {
+ {"\\code"},
+};
+
+load_paths =
+{
+	{
+		{ {"\\code"}, .recursive = true, .relative = true }, .os = "win"
+	},
+};
+
+
+
+command_list =  {
+	{
+		.name = "build",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {
+			{ "build.bat", .os = "win" },
+		},
+	},
+	{
+		.name = "run",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {
+			{ "build\win64_platform_debug.exe", .os = "win" },
+		},
+	},
+
+	{
+		.name = "build_and_run",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {
+			{ "build.bat && build\win64_platform_debug.exe", .os = "win" },
+		},
+	},
+
+	{
+		.name = "debug",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {
+			{ "debug.bat", .os = "win" },
+		},
+	},
+	{
+		.name = "debug_vs",
+		.out = "*compilation*",
+		.footer_panel = true,
+		.save_dirty_files = true,
+		.cursor_at_end = false,
+		.cmd = {
+			{ "devenv build\win64_platform_debug.exe", .os = "win" },
+		},
+	},
+
+};
+
+fkey_command[5] = "build";
+fkey_command[6] = "run";
+fkey_command[7] = "build_and_run";
+fkey_command[8] = "debug";
+fkey_command[9] = "debug_vs";
